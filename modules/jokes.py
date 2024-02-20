@@ -2,7 +2,7 @@ import requests
 import json
 limit = 1
 api_url = 'https://api.api-ninjas.com/v1/jokes?limit={}'.format(limit)
-response = requests.get(api_url, headers={'X-Api-Key': 'u2WUNGAW0Y0VCgkqM7uKaA==f2GmRvZntpTgyhIk'})
+response = requests.get(api_url, headers={'X-Api-Key': '<api key>'})
 if response.status_code == requests.codes.ok:
     joke = response.text
     data = json.loads(joke)
